@@ -1,0 +1,42 @@
+site:
+  title: Services
+  start_page: Demo::index.adoc
+content:
+  sources: 
+  - url: https://github.com/cpkio/antora-demo-component
+output:
+  clean: true
+asciidoc:
+  attributes:
+    allow-uri-read: true
+    icons: font
+
+    sectanchors: ''
+    sectlinks: ''
+    table-frame: 'none@'
+    table-grid: 'rows@'
+
+    appendix-caption: &appendix-caption Приложение
+    appendix-refsig: *appendix-caption
+    caution-caption: Внимание
+    chapter-signifier: &chapter-signifier Глава
+    chapter-refsig: *chapter-signifier
+    example-caption: Пример
+    figure-caption: Рисунок
+    important-caption: Важно
+    last-update-label: Последнее обновление
+    note-caption: Примечание
+    part-signifier: &part-signifier Часть
+    part-refsig: *part-signifier
+    section-refsig: Раздел
+    table-caption!: Таблица
+    tip-caption: Подсказка
+    toc-title: &toc-title Содержание
+    page-toctitle: *toc-title
+    untitled-label: Без названия
+    version-label: Версия
+    warning-caption: Предупреждение
+    page-pagination: true
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
